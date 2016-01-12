@@ -1,0 +1,4 @@
+pass
+gpg-agent
+pinentry-mac (brew: update ~/.gnupg/gpg-agent.conf to this line:
+              pinentry-program /usr/local/bin/pinentry-mac)
