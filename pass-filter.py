@@ -18,7 +18,7 @@ def list_passwords():
         for filename in fnmatch.filter(filenames, '*.gpg'):
             ret.append(os.path.join(root, filename).rstrip('.gpg').replace(PASS_DIR, ''))
 
-    return ret
+    return sorted(ret, key=lambda s: s.lower())
 
 
 def search_passwords(query):
