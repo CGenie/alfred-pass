@@ -24,12 +24,12 @@ def list_passwords():
 def search_passwords(query):
     ret = []
 
-    terms = filter(lambda x: x, query.split())
+    terms = filter(lambda x: x, query.lower().split())
     passwords = list_passwords()
 
     for password in passwords:
         for t in terms:
-            if t not in password:
+            if t not in password.lower():
                 break
         else:
             ret.append(password)
