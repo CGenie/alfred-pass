@@ -50,7 +50,7 @@
 				<key>script</key>
 				<string>python pass-filter.py "{query}"</string>
 				<key>title</key>
-				<string>keywords to search pass</string>
+				<string>Search Password Store for ‘…’</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
