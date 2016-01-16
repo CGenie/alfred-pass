@@ -37,15 +37,21 @@ def search_passwords(query):
     return ret
 
 
-def xmlize_items(items):
+def xmlize_items(items, query):
     items_a = []
 
     for item in items:
+        complete = item
+        if item.lower().startswith(query.lower()):
+            i = item.find("/", len(query))
+            if i != -1:
+                complete = item[:(i+1)]
+
         items_a.append("""
-    <item arg="%(item)s">
+    <item arg="%(item)s" autocomplete="%(complete)s">
         <title>%(item)s</title>
     </item>
-        """ % {'item': item})
+        """ % {'item': item, 'complete': complete})
 
     return """
 <?xml version="1.0"?>
@@ -56,5 +62,5 @@ def xmlize_items(items):
 
 
 items = search_passwords(QUERY)
-print xmlize_items(items)
+print xmlize_items(items, QUERY)
 
