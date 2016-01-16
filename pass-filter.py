@@ -3,6 +3,7 @@
 import fnmatch
 import os
 import sys
+import string
 
 
 QUERY = sys.argv[1]
@@ -41,6 +42,10 @@ def xmlize_items(items, query):
     items_a = []
 
     for item in items:
+        list = string.rsplit(item, "/", 1)
+        name = list[-1]
+        path = item if len(list) == 2 else ""
+
         complete = item
         if item.lower().startswith(query.lower()):
             i = item.find("/", len(query))
@@ -49,9 +54,10 @@ def xmlize_items(items, query):
 
         items_a.append("""
     <item arg="%(item)s" autocomplete="%(complete)s">
-        <title>%(item)s</title>
+        <title>%(name)s</title>
+        <subtitle>%(path)s</subtitle>
     </item>
-        """ % {'item': item, 'complete': complete})
+        """ % {'item': item, 'name': name, 'path': path, 'complete': complete})
 
     return """
 <?xml version="1.0"?>
