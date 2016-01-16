@@ -53,7 +53,7 @@ def xmlize_items(items, query):
                 complete = item[:(i+1)]
 
         items_a.append("""
-    <item arg="%(item)s" autocomplete="%(complete)s">
+    <item uid="%(item)s" arg="%(item)s" autocomplete="%(complete)s">
         <title>%(name)s</title>
         <subtitle>%(path)s</subtitle>
     </item>
