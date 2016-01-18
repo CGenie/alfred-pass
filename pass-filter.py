@@ -3,6 +3,7 @@
 import fnmatch
 import os
 import sys
+import string
 
 
 QUERY = sys.argv[1]
@@ -37,15 +38,26 @@ def search_passwords(query):
     return ret
 
 
-def xmlize_items(items):
+def xmlize_items(items, query):
     items_a = []
 
     for item in items:
+        list = string.rsplit(item, "/", 1)
+        name = list[-1]
+        path = item if len(list) == 2 else ""
+
+        complete = item
+        if item.lower().startswith(query.lower()):
+            i = item.find("/", len(query))
+            if i != -1:
+                complete = item[:(i+1)]
+
         items_a.append("""
-    <item arg="%(item)s">
-        <title>%(item)s</title>
+    <item uid="%(item)s" arg="%(item)s" autocomplete="%(complete)s">
+        <title>%(name)s</title>
+        <subtitle>%(path)s</subtitle>
     </item>
-        """ % {'item': item})
+        """ % {'item': item, 'name': name, 'path': path, 'complete': complete})
 
     return """
 <?xml version="1.0"?>
@@ -56,5 +68,5 @@ def xmlize_items(items):
 
 
 items = search_passwords(QUERY)
-print xmlize_items(items)
+print xmlize_items(items, QUERY)
 
