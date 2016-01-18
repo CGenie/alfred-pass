@@ -23,3 +23,11 @@ Basic Alfred commands:
 ## `pass <filter terms>`
 
 This will search through your passwords using the filter terms you provided.
+
+## Development
+
+To generate the `pass.alfredworkflow` file (which you can import to Alfred), just use
+
+```
+make
+```
