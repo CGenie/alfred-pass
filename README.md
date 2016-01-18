@@ -24,6 +24,22 @@ Basic Alfred commands:
 
 This will search through your passwords using the filter terms you provided.
 
+The password will be copied to clipboard and cleared after 45 seconds (this is the default
+`pass -c` behavior).  You can change that time by modifying the env variable
+`PASSWORD_STORE_CLIP_TIME`. Or in the `pass-show.sh` file you can change this line
+
+```
+pass show -c $QUERY
+```
+
+into this one
+
+```
+pass show $QUERY | awk 'BEGIN{ORS=""} {print; exit}' | pbcopy
+```
+
+to aviod auto-clearing of clipboard.
+
 ## Development
 
 To generate the `pass.alfredworkflow` file (which you can import to Alfred), just use
