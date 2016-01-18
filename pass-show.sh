@@ -14,4 +14,5 @@ else
 fi
 
 # PASS
-pass show $QUERY | awk 'BEGIN{ORS=""} {print; exit}' | pbcopy
+#pass show $QUERY | awk 'BEGIN{ORS=""} {print; exit}' | pbcopy
+pass show -c $QUERY
