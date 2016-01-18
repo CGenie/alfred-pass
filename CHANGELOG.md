@@ -5,6 +5,10 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
 
+## [0.2.1] - 2016-01-18
+### Added
+- `LICENSE.md` file
+
 ## [0.2.0] - 2016-01-18
 ### Added
 - Add `Makefile` to create `pass.alfredworkflow` by @sorbits
