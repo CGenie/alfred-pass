@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>pl.intrepidus.pass</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -99,6 +99,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/CGenie/alfred-pass</string>
 </dict>
 </plist>
