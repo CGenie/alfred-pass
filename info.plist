@@ -19,6 +19,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>97122574-1811-40EE-8FA3-CA5A7E8CB809</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0D9D4DE6-36FF-459E-9457-B3CAD298670C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Przemek Kamiński</string>
@@ -30,6 +41,25 @@
 	<string>pass</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>bash pass-show.sh "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -71,14 +101,33 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>bash pass-show.sh "{query}"</string>
+				<string>bash pass-generate.sh "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
+			<string>0D9D4DE6-36FF-459E-9457-B3CAD298670C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pg</string>
+				<key>text</key>
+				<string>Generate password</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>97122574-1811-40EE-8FA3-CA5A7E8CB809</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -92,10 +141,20 @@
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
+		<key>0D9D4DE6-36FF-459E-9457-B3CAD298670C</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>97122574-1811-40EE-8FA3-CA5A7E8CB809</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
