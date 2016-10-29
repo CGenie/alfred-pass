@@ -17,8 +17,7 @@ def list_passwords():
 
     for root, dirnames, filenames in os.walk(PASS_DIR):
         for filename in fnmatch.filter(filenames, '*.gpg'):
-            ret.append(os.path.join(root, filename).rstrip('.gpg').replace(PASS_DIR, ''))
-
+            ret.append(os.path.join(root, filename.replace('.gpg','')).replace(PASS_DIR, ''))
     return sorted(ret, key=lambda s: s.lower())
 
 
