@@ -5,6 +5,14 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
 
+## [0.3] - 2017-02-08
+### Fixed
+- remove use of rstrip as it can strip valid characters from password filename
+- update README.md with basic installation instructions
+
+### Added
+- `pass generate` functionality
+
 ## [0.2.1] - 2016-01-18
 ### Added
 - `LICENSE.md` file

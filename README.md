@@ -1,6 +1,7 @@
 # Alfred 2 integration with Pass
 
 [Packal page](http://www.packal.org/workflow/pass-0)
+
 [Alfred forum page](http://www.alfredforum.com/topic/8471-pass-the-standard-unix-password-manager/)
 
 This is Alfred 2 integration with [Pass - the standard Unix password manager](http://www.passwordstore.org/).
@@ -20,6 +21,15 @@ Next configure `gpg-agent` to use `pinentry-mac` and not the bundled one, editin
 ```
 pinentry-program /usr/local/bin/pinentry-mac
 ```
+
+## Installation
+
+After your system is set up as described above, download the latest package from
+[Packal](http://www.packal.org/workflow/pass-0). Locate the file in Finder, right-click
+on it and choose 'Open With -> Alfred'. You will be prompted to install the workflow, so go ahead.
+Next fire up the Alfred console (`Alt-Space` by default) and type one of the commands described below.
+
+## Usage
 
 Basic Alfred commands:
 
