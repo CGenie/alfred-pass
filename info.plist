@@ -17,6 +17,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>97122574-1811-40EE-8FA3-CA5A7E8CB809</key>
@@ -28,6 +30,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -50,6 +54,10 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>bash pass-show.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -58,11 +66,17 @@
 			<key>uid</key>
 			<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -77,8 +91,16 @@
 				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
 				<string>python pass-filter.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>Get password from pass</string>
 				<key>type</key>
@@ -91,7 +113,7 @@
 			<key>uid</key>
 			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -102,6 +124,10 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>bash pass-generate.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -110,7 +136,7 @@
 			<key>uid</key>
 			<string>0D9D4DE6-36FF-459E-9457-B3CAD298670C</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -119,6 +145,8 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>pg</string>
+				<key>subtext</key>
+				<string></string>
 				<key>text</key>
 				<string>Generate password</string>
 				<key>withspace</key>
@@ -129,7 +157,7 @@
 			<key>uid</key>
 			<string>97122574-1811-40EE-8FA3-CA5A7E8CB809</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -138,21 +166,29 @@
 	<dict>
 		<key>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
 		<key>0D9D4DE6-36FF-459E-9457-B3CAD298670C</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
 		<key>97122574-1811-40EE-8FA3-CA5A7E8CB809</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
