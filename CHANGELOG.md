@@ -5,6 +5,18 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
 
+## [0.3.2] - 2018-05-09
+### Fixed
+- new Placeholder Title
+- add Alfred 3 to README.md
+
+### Added
+- Icons
+
+## [0.3.1] - 2017-10-31
+### Fixed
+ - fix searching for secrets with whitespaces in their name
+
 ## [0.3] - 2017-02-08
 ### Fixed
 - remove use of rstrip as it can strip valid characters from password filename
