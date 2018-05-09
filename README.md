@@ -1,10 +1,10 @@
-# Alfred 2 integration with Pass
+# Alfred 2 and 3 integration with Pass
 
 [Packal page](http://www.packal.org/workflow/pass-0)
 
 [Alfred forum page](http://www.alfredforum.com/topic/8471-pass-the-standard-unix-password-manager/)
 
-This is Alfred 2 integration with [Pass - the standard Unix password manager](http://www.passwordstore.org/).
+This is Alfred 2 and 3 integration with [Pass - the standard Unix password manager](http://www.passwordstore.org/).
 I took the idea for this from [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu/passmenu)
 which is available for Linux.
 
