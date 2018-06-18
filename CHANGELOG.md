@@ -5,6 +5,10 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
 
+## [0.3.3] - 2018-06-18
+### Added
+- Notify when password is copied to clipboard
+
 ## [0.3.2] - 2018-05-09
 ### Fixed
 - new Placeholder Title
