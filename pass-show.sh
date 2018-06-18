@@ -16,3 +16,4 @@ fi
 # PASS
 #pass show "$QUERY" | awk 'BEGIN{ORS=""} {print; exit}' | pbcopy
 pass show -c "$QUERY"
+osascript -e 'display notification "Copied password to clipboard" with title "Unix pass"'
