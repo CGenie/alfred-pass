@@ -20,6 +20,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E5D5164-B37E-4492-86A3-00C72B9425C6</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Copy username</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>97122574-1811-40EE-8FA3-CA5A7E8CB809</key>
 		<array>
@@ -123,6 +133,29 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>bash login-show.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6E5D5164-B37E-4492-86A3-00C72B9425C6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>bash pass-generate.sh "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -176,7 +209,14 @@
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
-			<real>180</real>
+			<integer>340</integer>
+		</dict>
+		<key>6E5D5164-B37E-4492-86A3-00C72B9425C6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>200</integer>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
@@ -190,7 +230,7 @@
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<real>180</real>
+			<integer>340</integer>
 		</dict>
 	</dict>
 	<key>version</key>
