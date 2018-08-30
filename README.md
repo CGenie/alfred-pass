@@ -54,7 +54,12 @@ pass show $QUERY | awk 'BEGIN{ORS=""} {print; exit}' | pbcopy
 to aviod auto-clearing of clipboard.
 
 ## `pg <id>`
+
 Calls `pass generate` to add a new password with default length of 20 chars.
+
+## `po <filter terms>`
+
+This will search through your OTP passwords (requires `pass-otp`) using the filter terms you provided.
 
 ## Development
 

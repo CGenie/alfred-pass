@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
+### Added
+- pass-otp support
 
 ## [0.3.3] - 2018-06-18
 ### Added
