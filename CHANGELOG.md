@@ -7,6 +7,10 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 ### Added
 - pass-otp support
 
+## [0.3.4] - 2018-08-29
+### Added
+- copy username to clipboard
+
 ## [0.3.3] - 2018-06-18
 ### Added
 - Notify when password is copied to clipboard
