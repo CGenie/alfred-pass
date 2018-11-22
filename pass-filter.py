@@ -15,7 +15,7 @@ PASS_DIR = os.environ.get('PASSWORD_STORE_DIR', os.path.join(HOME, '.password-st
 def list_passwords():
     ret = []
 
-    for root, dirnames, filenames in os.walk(PASS_DIR):
+    for root, dirnames, filenames in os.walk(PASS_DIR, True, None, True):
         for filename in fnmatch.filter(filenames, '*.gpg'):
             ret.append(os.path.join(root, filename.replace('.gpg','')).replace(PASS_DIR, ''))
     return sorted(ret, key=lambda s: s.lower())
