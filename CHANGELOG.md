@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
+### Added
+- use fuzzywuzzy to match input strings
 ### Fixed
 - follow symlinks in the `password-filter.py` file [#18]
 - set transient Alfred clipboard [#14]

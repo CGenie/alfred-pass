@@ -5,6 +5,7 @@ import os
 import sys
 import string
 
+from fuzzywuzzy import process
 
 QUERY = sys.argv[1]
 HOME = os.environ['HOME']
@@ -24,17 +25,8 @@ def list_passwords():
 def search_passwords(query):
     ret = []
 
-    terms = filter(lambda x: x, query.lower().split())
     passwords = list_passwords()
-
-    for password in passwords:
-        for t in terms:
-            if t not in password.lower():
-                break
-        else:
-            ret.append(password)
-
-    return ret
+    return [entry[0] for entry in process.extract(query, passwords)]
 
 
 def xmlize_items(items, query):
