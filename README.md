@@ -22,6 +22,22 @@ Next configure `gpg-agent` to use `pinentry-mac` and not the bundled one, editin
 pinentry-program /usr/local/bin/pinentry-mac
 ```
 
+If you prefer to keep the terminal version of `pinentry` you can use the
+`pinentry.sh` wrapper from this repository as the `pinentry-program`. This will
+use the ncurses version when in console and the GUI version for Alfred etc.
+
+You can also take a look at [this blog post from @bshiller](https://brianschiller.com/blog/2016/08/31/gnu-pass-alfred).
+
+### GPG tweaking
+
+You can tweak some of the `gpg-agent` settings in `~/.gnupg/gpg-agent.conf`:
+
+```
+max-cache-ttl 7200
+```
+
+After 7200 seconds, GPG will forget your master password.
+
 ## Installation
 
 After your system is set up as described above, download the latest package from
