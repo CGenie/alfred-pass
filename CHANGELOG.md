@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
+### Fixed
+ - follow symlinks in the `password-filter.py` file [#18]
 
 ## [0.3.4] - 2018-02-04
 ### Added
