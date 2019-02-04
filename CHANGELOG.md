@@ -4,8 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
+
+## [0.3.4] - 2018-02-04
 ### Added
 - pass-otp support
+### Changed
+- we now use Alfred's transient clipboard (for `pass`, not for `po` yet), kudos
+  to @bgshiller!
+- recommended to use `pinentry.sh` instead of `pinentry-mac`
 
 ## [0.3.3] - 2018-06-18
 ### Added
