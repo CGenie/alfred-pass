@@ -147,7 +147,7 @@
 				<key>clipboardtext</key>
 				<string>{query}</string>
 				<key>transient</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
@@ -272,7 +272,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>A workflow to integrate with Pass - the standard Unix password manager.
+See the README file at https://github.com/CGenie/alfred-pass for more info.</string>
 	<key>uidata</key>
 	<dict>
 		<key>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</key>

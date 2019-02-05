@@ -5,7 +5,8 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [Unreleased]
 ### Fixed
- - follow symlinks in the `password-filter.py` file [#18]
+- follow symlinks in the `password-filter.py` file [#18]
+- set transient Alfred clipboard [#14]
 
 ## [0.3.4] - 2018-02-04
 ### Added
@@ -29,7 +30,7 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for more details.
 
 ## [0.3.1] - 2017-10-31
 ### Fixed
- - fix searching for secrets with whitespaces in their name
+- fix searching for secrets with whitespaces in their name
 
 ## [0.3] - 2017-02-08
 ### Fixed
