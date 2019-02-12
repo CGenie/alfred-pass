@@ -1,17 +1,15 @@
-# Alfred 2 and 3 integration with Pass
+# Pass Workflow for Alfred 2/3
 
-[Packal page](http://www.packal.org/workflow/pass-0)
+[Pacmax Page](https://pacmax.org/pac/cgenie-alfred-pass/)
 
-[Alfred forum page](http://www.alfredforum.com/topic/8471-pass-the-standard-unix-password-manager/)
+[Alfred forum page](https://www.alfredforum.com/topic/8471-pass-the-standard-unix-password-manager/)
 
-This is Alfred 2 and 3 integration with [Pass - the standard Unix password manager](http://www.passwordstore.org/).
-I took the idea for this from [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu/passmenu)
-which is available for Linux.
+This is an Alfred 2/3 workflow for [Pass - the standard Unix password manager](https://www.passwordstore.org/). It's based on [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu/passmenu), which is available for Linux.
 
 ## Setup
 
 To make this work you need:
-* [pass](http://www.passwordstore.org/) (obviously) -- needs to be set up with password store in
+* [Pass](https://www.passwordstore.org/) (obviously) -- needs to be set up with password store in
   `~/.password-store/`.
 * `gpg-agent` -- install with `brew`
 * `pinentry-mac` -- also install with `brew` (this is GUI frontend for `gpg-agent`).
@@ -41,7 +39,7 @@ After 7200 seconds, GPG will forget your master password.
 ## Installation
 
 After your system is set up as described above, download the latest package from
-[Packal](http://www.packal.org/workflow/pass-0). Locate the file in Finder, right-click
+[Pacmax](https://pacmax.org/pac/cgenie-alfred-pass/). Locate the file in Finder, right-click
 on it and choose 'Open With -> Alfred'. You will be prompted to install the workflow, so go ahead.
 Next fire up the Alfred console (`Alt-Space` by default) and type one of the commands described below.
 
