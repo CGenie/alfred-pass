@@ -1,4 +1,4 @@
-# Pass Workflow for Alfred 2/3
+# An Alfred 2/3 Workflow for Pass
 
 [Pacmax Page](https://pacmax.org/pac/cgenie-alfred-pass/)
 
