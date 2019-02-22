@@ -13,6 +13,8 @@ To make this work you need:
   `~/.password-store/`.
 * `gpg-agent` -- install with `brew`
 * `pinentry-mac` -- also install with `brew` (this is GUI frontend for `gpg-agent`).
+* (optionally) the `fuzzywuzzy` and (also optionally) `python-Levenshtein`
+  Python modules (install with `pip install --user fuzzywuzzy python-Levenshtein`)
 
 Next configure `gpg-agent` to use `pinentry-mac` and not the bundled one, editing `~/.gnupg/gpg-agent.conf`:
 

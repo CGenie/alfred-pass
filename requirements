@@ -3,3 +3,5 @@ pass-otp (optional)
 gpg-agent
 pinentry-mac (brew: update ~/.gnupg/gpg-agent.conf to this line:
               pinentry-program /usr/local/bin/pinentry-mac)
+fuzzywuzzy (optional)
+python-Levenshtein (optional)

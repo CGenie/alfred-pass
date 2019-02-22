@@ -5,10 +5,16 @@ import os
 import sys
 import string
 
+fuzzysearch = True
+try:
+    from fuzzywuzzy import process
+except:
+    fuzzysearch = False
+
 
 QUERY = sys.argv[1]
 HOME = os.environ['HOME']
-PASS_DIR = os.environ.get('PASSWORD_STORE_DIR', os.path.join(HOME, '.password-store/'))
+PASS_DIR = os.environ.get('PASSWORD_STORE_DIR',os.path.join(HOME, '.password-store/'))
 
 
 # TODO: list_passwords creates cache of passwords for first time
@@ -22,6 +28,21 @@ def list_passwords():
 
 
 def search_passwords(query):
+    ''' Search passwords using the Fuzzy search method if fuzzywuzzy is available,
+    or default to the filter-based search otherwise'''
+    if fuzzysearch:
+        return search_passwords_fuzzy(query)
+    return search_passwords_filter(query)
+
+
+def search_passwords_fuzzy(query):
+    ''' Search passwords using the Fuzzy search method using fuzzywuzzy'''
+    passwords = list_passwords()
+    return [entry[0] for entry in process.extract(query, passwords)]
+
+
+def search_passwords_filter(query):
+    ''' Search passwords using the filter-based search, which doesn't require fuzzywuzzy'''
     ret = []
 
     terms = filter(lambda x: x, query.lower().split())
