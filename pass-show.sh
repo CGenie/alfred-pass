@@ -3,7 +3,7 @@
 set -e
 
 QUERY=$1
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH
 
 # GPG agent
 #envfile="$HOME/.gnupg/gpg-agent.env"
