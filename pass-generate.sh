@@ -3,6 +3,6 @@
 set -e
 
 QUERY=$1
-PATH=/usr/local/bin:$PATH
+PATH=/opt/homebrew/bin/:/usr/local/bin:$PATH
 
 pass generate "$QUERY" -n 20 -c 
