@@ -95,7 +95,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python pass-filter.py "{query}"</string>
+				<string>python3 pass-filter.py  "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
